@@ -2,43 +2,46 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
+
+    <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0" />
+          content="width=device-width, initial-scale=1.0">
 
     <title>BIG BRINDES | Brindes Personalizados Premium</title>
 
     <meta name="description"
-          content="BIG BRINDES - Brindes personalizados premium para empresas e eventos. Elegância, sofisticação e qualidade.">
+          content="BIG BRINDES - Brindes personalizados premium para empresas e eventos.">
 
-    <!-- Google Fonts -->
+    <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet">
 
-    <!-- Tailwind -->
+    <!-- TAILWIND -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Font Awesome -->
+    <!-- FONT AWESOME -->
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- AOS -->
     <link rel="stylesheet"
-          href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+          href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
-    <!-- Swiper -->
+    <!-- SWIPER -->
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <style>
         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             scroll-behavior: smooth;
         }
 
         body {
             font-family: 'Poppins', sans-serif;
             background: #FAFAF8;
-            color: #0f172a;
             overflow-x: hidden;
         }
 
@@ -49,67 +52,50 @@
             --white: #FAFAF8;
         }
 
-        .glass {
-            backdrop-filter: blur(14px);
-            background: rgba(255, 255, 255, 0.08);
-        }
-
-        .gold-text {
-            color: var(--gold);
-        }
-
-        .gold-bg {
-            background: var(--gold);
-        }
-
-        .primary-bg {
-            background: var(--primary);
-        }
-
-        .hero-gradient {
+        .hero-bg {
             background:
                 radial-gradient(circle at top left,
                     rgba(201, 164, 76, 0.20),
                     transparent 30%),
                 radial-gradient(circle at bottom right,
-                    rgba(0, 109, 115, 0.18),
+                    rgba(0, 109, 115, 0.20),
                     transparent 35%),
                 linear-gradient(135deg,
-                    #012d30,
+                    #003f44,
                     #006D73);
         }
 
-        .btn-premium {
-            transition: 0.4s ease;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        .glass {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
         }
 
-        .btn-premium:hover {
-            transform: translateY(-4px) scale(1.02);
+        .btn-hover {
+            transition: .4s ease;
+        }
+
+        .btn-hover:hover {
+            transform: translateY(-4px);
         }
 
         .card-hover {
-            transition: 0.4s ease;
+            transition: .4s ease;
         }
 
         .card-hover:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.10);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
         }
 
-        .glow {
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            background: rgba(201, 164, 76, 0.10);
-            filter: blur(120px);
-            z-index: 0;
+        .gallery-card img {
+            transition: .7s ease;
         }
 
-        .swiper {
-            padding-bottom: 50px !important;
+        .gallery-card:hover img {
+            transform: scale(1.1);
         }
     </style>
+
 </head>
 
 <body>
@@ -121,34 +107,38 @@
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
             <div class="flex items-center gap-3">
-                <div class="w-12 h-12 rounded-full primary-bg flex items-center justify-center">
-                    <i class="fa-solid fa-crown text-[var(--gold)] text-xl"></i>
+
+                <div class="w-12 h-12 rounded-full bg-[#006D73] flex items-center justify-center">
+
+                    <i class="fa-solid fa-crown text-[#C9A44C] text-xl"></i>
+
                 </div>
 
                 <h1 class="text-2xl font-bold text-white">
-                    BIG <span class="gold-text">BRINDES</span>
+                    BIG <span class="text-[#C9A44C]">BRINDES</span>
                 </h1>
+
             </div>
 
-            <nav class="hidden md:flex items-center gap-8 text-white font-medium">
+            <nav class="hidden md:flex gap-8 text-white font-medium">
 
                 <a href="#sobre"
-                   class="hover:text-[var(--gold)] duration-300">
+                   class="hover:text-[#C9A44C] duration-300">
                     Sobre
                 </a>
 
                 <a href="#categorias"
-                   class="hover:text-[var(--gold)] duration-300">
+                   class="hover:text-[#C9A44C] duration-300">
                     Categorias
                 </a>
 
                 <a href="#galeria"
-                   class="hover:text-[var(--gold)] duration-300">
+                   class="hover:text-[#C9A44C] duration-300">
                     Galeria
                 </a>
 
                 <a href="#contato"
-                   class="hover:text-[var(--gold)] duration-300">
+                   class="hover:text-[#C9A44C] duration-300">
                     Contato
                 </a>
 
@@ -156,9 +146,11 @@
 
             <a href="https://wa.me/5531985230581"
                target="_blank"
-               class="btn-premium bg-[var(--gold)] text-black px-6 py-3 rounded-full font-semibold">
+               class="bg-[#C9A44C] text-black px-6 py-3 rounded-full font-semibold btn-hover">
+
                 <i class="fa-brands fa-whatsapp"></i>
                 WhatsApp
+
             </a>
 
         </div>
@@ -167,12 +159,9 @@
 
     <!-- HERO -->
 
-    <section class="hero-gradient min-h-screen flex items-center relative overflow-hidden">
+    <section class="hero-bg min-h-screen flex items-center relative overflow-hidden">
 
-        <div class="glow top-0 left-0"></div>
-        <div class="glow bottom-0 right-0"></div>
-
-        <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
             <div data-aos="fade-right">
 
@@ -181,59 +170,87 @@
                 </span>
 
                 <h2 class="text-5xl lg:text-7xl font-extrabold text-white leading-tight mt-6">
+
                     Transformamos ideias em
-                    <span class="gold-text">
+
+                    <span class="text-[#C9A44C]">
                         brindes memoráveis
                     </span>
+
                 </h2>
 
                 <p class="text-white/80 text-lg mt-8 leading-relaxed">
+
                     Brindes personalizados para fortalecer sua marca
                     com elegância, sofisticação e alto padrão.
+
                 </p>
 
                 <div class="flex flex-wrap gap-5 mt-10">
 
                     <a href="https://wa.me/5531985230581"
                        target="_blank"
-                       class="btn-premium bg-[var(--gold)] text-black px-8 py-4 rounded-full font-bold">
+                       class="bg-[#C9A44C] text-black px-8 py-4 rounded-full font-bold btn-hover">
+
                         Solicitar Orçamento
+
                     </a>
 
                     <a href="#galeria"
-                       class="btn-premium border border-white/20 text-white px-8 py-4 rounded-full font-semibold">
+                       class="border border-white/20 text-white px-8 py-4 rounded-full font-semibold btn-hover">
+
                         Ver Produtos
+
                     </a>
 
                 </div>
 
             </div>
 
-            <div class="relative"
-                 data-aos="fade-left">
+            <div data-aos="fade-left">
 
-                <div class="bg-white/10 border border-white/10 rounded-[40px] p-10 backdrop-blur-xl">
+                <div class="glass rounded-[40px] p-10 border border-white/10">
 
                     <div class="grid grid-cols-2 gap-5">
 
                         <div class="bg-white rounded-3xl p-8 text-center card-hover">
-                            <i class="fa-solid fa-mug-hot text-5xl text-[var(--gold)]"></i>
-                            <h3 class="mt-4 font-bold text-lg">Canecas</h3>
+
+                            <i class="fa-solid fa-mug-hot text-5xl text-[#C9A44C]"></i>
+
+                            <h3 class="mt-4 font-bold text-lg">
+                                Canecas
+                            </h3>
+
                         </div>
 
                         <div class="bg-white rounded-3xl p-8 text-center card-hover">
-                            <i class="fa-solid fa-shirt text-5xl text-[var(--gold)]"></i>
-                            <h3 class="mt-4 font-bold text-lg">Camisetas</h3>
+
+                            <i class="fa-solid fa-shirt text-5xl text-[#C9A44C]"></i>
+
+                            <h3 class="mt-4 font-bold text-lg">
+                                Camisas
+                            </h3>
+
                         </div>
 
                         <div class="bg-white rounded-3xl p-8 text-center card-hover">
-                            <i class="fa-solid fa-gift text-5xl text-[var(--gold)]"></i>
-                            <h3 class="mt-4 font-bold text-lg">Kits</h3>
+
+                            <i class="fa-solid fa-key text-5xl text-[#C9A44C]"></i>
+
+                            <h3 class="mt-4 font-bold text-lg">
+                                Chaveiros
+                            </h3>
+
                         </div>
 
                         <div class="bg-white rounded-3xl p-8 text-center card-hover">
-                            <i class="fa-solid fa-bottle-water text-5xl text-[var(--gold)]"></i>
-                            <h3 class="mt-4 font-bold text-lg">Garrafas</h3>
+
+                            <i class="fa-solid fa-mobile-screen text-5xl text-[#C9A44C]"></i>
+
+                            <h3 class="mt-4 font-bold text-lg">
+                                Capinhas
+                            </h3>
+
                         </div>
 
                     </div>
@@ -257,23 +274,29 @@
                  data-aos="fade-up">
 
                 <h2 class="text-5xl font-bold">
-                    Sobre a <span class="gold-text">BIG BRINDES</span>
+
+                    Sobre a
+                    <span class="text-[#C9A44C]">
+                        BIG BRINDES
+                    </span>
+
                 </h2>
 
                 <p class="mt-6 text-gray-600 max-w-3xl mx-auto text-lg">
+
                     Especialistas em brindes personalizados premium,
                     oferecendo soluções criativas para fortalecer marcas
                     e criar conexões duradouras.
+
                 </p>
 
             </div>
 
             <div class="grid lg:grid-cols-3 gap-8">
 
-                <div class="bg-white rounded-[30px] p-10 shadow-xl card-hover"
-                     data-aos="fade-up">
+                <div class="bg-white rounded-[30px] p-10 shadow-xl card-hover">
 
-                    <i class="fa-solid fa-award text-5xl gold-text"></i>
+                    <i class="fa-solid fa-award text-5xl text-[#C9A44C]"></i>
 
                     <h3 class="text-2xl font-bold mt-6">
                         Qualidade Premium
@@ -285,34 +308,30 @@
 
                 </div>
 
-                <div class="bg-white rounded-[30px] p-10 shadow-xl card-hover"
-                     data-aos="fade-up"
-                     data-aos-delay="100">
+                <div class="bg-white rounded-[30px] p-10 shadow-xl card-hover">
 
-                    <i class="fa-solid fa-bolt text-5xl gold-text"></i>
+                    <i class="fa-solid fa-bolt text-5xl text-[#C9A44C]"></i>
 
                     <h3 class="text-2xl font-bold mt-6">
                         Atendimento Rápido
                     </h3>
 
                     <p class="text-gray-600 mt-4">
-                        Agilidade no suporte e nos orçamentos.
+                        Agilidade e suporte especializado.
                     </p>
 
                 </div>
 
-                <div class="bg-white rounded-[30px] p-10 shadow-xl card-hover"
-                     data-aos="fade-up"
-                     data-aos-delay="200">
+                <div class="bg-white rounded-[30px] p-10 shadow-xl card-hover">
 
-                    <i class="fa-solid fa-pen-ruler text-5xl gold-text"></i>
+                    <i class="fa-solid fa-pen-ruler text-5xl text-[#C9A44C]"></i>
 
                     <h3 class="text-2xl font-bold mt-6">
                         Personalização Total
                     </h3>
 
                     <p class="text-gray-600 mt-4">
-                        Soluções criadas especialmente para sua marca.
+                        Brindes feitos para valorizar sua marca.
                     </p>
 
                 </div>
@@ -326,7 +345,7 @@
     <!-- CATEGORIAS -->
 
     <section id="categorias"
-             class="py-28 primary-bg text-white">
+             class="py-28 bg-[#006D73] text-white">
 
         <div class="max-w-7xl mx-auto px-6">
 
@@ -341,33 +360,33 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <div class="glass rounded-[30px] p-10 card-hover">
-                    <i class="fa-solid fa-mug-hot text-5xl gold-text"></i>
+                    <i class="fa-solid fa-mug-hot text-5xl text-[#C9A44C]"></i>
                     <h3 class="text-2xl font-bold mt-6">Canecas</h3>
                 </div>
 
                 <div class="glass rounded-[30px] p-10 card-hover">
-                    <i class="fa-solid fa-bottle-water text-5xl gold-text"></i>
-                    <h3 class="text-2xl font-bold mt-6">Garrafas</h3>
+                    <i class="fa-solid fa-key text-5xl text-[#C9A44C]"></i>
+                    <h3 class="text-2xl font-bold mt-6">Chaveiros</h3>
                 </div>
 
                 <div class="glass rounded-[30px] p-10 card-hover">
-                    <i class="fa-solid fa-shirt text-5xl gold-text"></i>
-                    <h3 class="text-2xl font-bold mt-6">Camisetas</h3>
+                    <i class="fa-solid fa-shirt text-5xl text-[#C9A44C]"></i>
+                    <h3 class="text-2xl font-bold mt-6">Camisas</h3>
                 </div>
 
                 <div class="glass rounded-[30px] p-10 card-hover">
-                    <i class="fa-solid fa-briefcase text-5xl gold-text"></i>
-                    <h3 class="text-2xl font-bold mt-6">Mochilas</h3>
+                    <i class="fa-solid fa-bottle-water text-5xl text-[#C9A44C]"></i>
+                    <h3 class="text-2xl font-bold mt-6">Garrafinhas</h3>
                 </div>
 
                 <div class="glass rounded-[30px] p-10 card-hover">
-                    <i class="fa-solid fa-box-open text-5xl gold-text"></i>
-                    <h3 class="text-2xl font-bold mt-6">Kits Corporativos</h3>
+                    <i class="fa-solid fa-file-lines text-5xl text-[#C9A44C]"></i>
+                    <h3 class="text-2xl font-bold mt-6">Folders</h3>
                 </div>
 
                 <div class="glass rounded-[30px] p-10 card-hover">
-                    <i class="fa-solid fa-gift text-5xl gold-text"></i>
-                    <h3 class="text-2xl font-bold mt-6">Personalizados</h3>
+                    <i class="fa-solid fa-mobile-screen text-5xl text-[#C9A44C]"></i>
+                    <h3 class="text-2xl font-bold mt-6">Capinhas</h3>
                 </div>
 
             </div>
@@ -389,23 +408,120 @@
                     Galeria Premium
                 </h2>
 
+                <p class="mt-5 text-gray-600 text-lg">
+                    Alguns dos nossos brindes personalizados.
+                </p>
+
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <div class="overflow-hidden rounded-[30px] shadow-xl card-hover">
+                <!-- CANECAS -->
+
+                <div class="gallery-card overflow-hidden rounded-[28px] shadow-xl relative">
+
+                    <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?q=80&w=1200"
+                         alt="Canecas"
+                         class="w-full h-[240px] object-cover">
+
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-5">
+
+                        <h3 class="text-white text-2xl font-bold">
+                            Canecas
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <!-- CHAVEIROS -->
+
+                <div class="gallery-card overflow-hidden rounded-[28px] shadow-xl relative">
+
+                    <img src="https://images.unsplash.com/photo-1616628182509-6f1f4d89f90f?q=80&w=1200"
+                         alt="Chaveiros"
+                         class="w-full h-[240px] object-cover">
+
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-5">
+
+                        <h3 class="text-white text-2xl font-bold">
+                            Chaveiros
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <!-- CAMISAS -->
+
+                <div class="gallery-card overflow-hidden rounded-[28px] shadow-xl relative">
+
                     <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200"
-                         class="w-full h-[320px] object-cover hover:scale-110 duration-700">
+                         alt="Camisas"
+                         class="w-full h-[240px] object-cover">
+
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-5">
+
+                        <h3 class="text-white text-2xl font-bold">
+                            Camisas
+                        </h3>
+
+                    </div>
+
                 </div>
 
-                <div class="overflow-hidden rounded-[30px] shadow-xl card-hover">
-                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200"
-                         class="w-full h-[320px] object-cover hover:scale-110 duration-700">
+                <!-- GARRAFINHAS -->
+
+                <div class="gallery-card overflow-hidden rounded-[28px] shadow-xl relative">
+
+                    <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=1200"
+                         alt="Garrafinhas"
+                         class="w-full h-[240px] object-cover">
+
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-5">
+
+                        <h3 class="text-white text-2xl font-bold">
+                            Garrafinhas
+                        </h3>
+
+                    </div>
+
                 </div>
 
-                <div class="overflow-hidden rounded-[30px] shadow-xl card-hover">
-                    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200"
-                         class="w-full h-[320px] object-cover hover:scale-110 duration-700">
+                <!-- FOLDERS -->
+
+                <div class="gallery-card overflow-hidden rounded-[28px] shadow-xl relative">
+
+                    <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=1200"
+                         alt="Folders"
+                         class="w-full h-[240px] object-cover">
+
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-5">
+
+                        <h3 class="text-white text-2xl font-bold">
+                            Folders
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <!-- CAPINHAS -->
+
+                <div class="gallery-card overflow-hidden rounded-[28px] shadow-xl relative">
+
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200"
+                         alt="Capinhas"
+                         class="w-full h-[240px] object-cover">
+
+                    <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-5">
+
+                        <h3 class="text-white text-2xl font-bold">
+                            Capinhas
+                        </h3>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -433,36 +549,51 @@
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
+
                         <div class="bg-white rounded-[30px] p-10 shadow-xl">
+
                             <p class="text-lg text-gray-600">
-                                Atendimento impecável e produtos incríveis.
+                                Atendimento impecável e brindes incríveis.
                             </p>
+
                             <h3 class="mt-6 font-bold text-xl">
                                 ⭐⭐⭐⭐⭐
                             </h3>
+
                         </div>
+
                     </div>
 
                     <div class="swiper-slide">
+
                         <div class="bg-white rounded-[30px] p-10 shadow-xl">
+
                             <p class="text-lg text-gray-600">
-                                Brindes sofisticados e entrega rápida.
+                                Excelente qualidade e entrega rápida.
                             </p>
+
                             <h3 class="mt-6 font-bold text-xl">
                                 ⭐⭐⭐⭐⭐
                             </h3>
+
                         </div>
+
                     </div>
 
                     <div class="swiper-slide">
+
                         <div class="bg-white rounded-[30px] p-10 shadow-xl">
+
                             <p class="text-lg text-gray-600">
-                                Excelente qualidade e ótimo suporte.
+                                Produtos sofisticados e suporte excelente.
                             </p>
+
                             <h3 class="mt-6 font-bold text-xl">
                                 ⭐⭐⭐⭐⭐
                             </h3>
+
                         </div>
+
                     </div>
 
                 </div>
@@ -475,21 +606,26 @@
 
     <!-- CTA -->
 
-    <section class="py-28 hero-gradient text-center text-white relative overflow-hidden">
+    <section class="py-28 hero-bg text-center text-white">
 
-        <div class="max-w-4xl mx-auto px-6 relative z-10">
+        <div class="max-w-4xl mx-auto px-6">
 
             <h2 class="text-5xl font-bold leading-tight">
-                Seu próximo brinde pode transformar sua marca
+
+                Seu próximo brinde pode
+                transformar sua marca
+
             </h2>
 
             <p class="mt-6 text-lg text-white/80">
+
                 Solicite agora seu orçamento personalizado.
+
             </p>
 
             <a href="https://wa.me/5531985230581"
                target="_blank"
-               class="inline-block mt-10 btn-premium bg-[var(--gold)] text-black px-10 py-5 rounded-full font-bold text-lg">
+               class="inline-block mt-10 bg-[#C9A44C] text-black px-10 py-5 rounded-full font-bold text-lg btn-hover">
 
                 <i class="fa-brands fa-whatsapp"></i>
                 Falar no WhatsApp
@@ -503,19 +639,26 @@
     <!-- FOOTER -->
 
     <footer id="contato"
-            class="primary-bg text-white py-16">
+            class="bg-[#006D73] text-white py-16">
 
         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
 
             <div>
 
                 <h2 class="text-3xl font-bold">
-                    BIG <span class="gold-text">BRINDES</span>
+
+                    BIG
+                    <span class="text-[#C9A44C]">
+                        BRINDES
+                    </span>
+
                 </h2>
 
                 <p class="mt-5 text-white/70">
+
                     Brindes personalizados premium para empresas,
                     eventos e ações corporativas.
+
                 </p>
 
             </div>
@@ -530,7 +673,7 @@
 
                     <a href="https://wa.me/5531985230581"
                        target="_blank"
-                       class="block hover:text-[var(--gold)]">
+                       class="block hover:text-[#C9A44C]">
 
                         <i class="fa-brands fa-whatsapp"></i>
                         WhatsApp
@@ -539,7 +682,7 @@
 
                     <a href="https://instagran.comedbrindes_loja/"
                        target="_blank"
-                       class="block hover:text-[var(--gold)]">
+                       class="block hover:text-[#C9A44C]">
 
                         <i class="fa-brands fa-instagram"></i>
                         Instagram
@@ -548,7 +691,7 @@
 
                     <a href="https://sites.google.com/view/wwwlojaedcombrindes/in%C3%ADcio"
                        target="_blank"
-                       class="block hover:text-[var(--gold)]">
+                       class="block hover:text-[#C9A44C]">
 
                         <i class="fa-solid fa-location-dot"></i>
                         Google Maps
@@ -569,14 +712,18 @@
 
                     <a href="https://instagran.comedbrindes_loja/"
                        target="_blank"
-                       class="hover:text-[var(--gold)] duration-300">
+                       class="hover:text-[#C9A44C] duration-300">
+
                         <i class="fa-brands fa-instagram"></i>
+
                     </a>
 
                     <a href="https://wa.me/5531985230581"
                        target="_blank"
-                       class="hover:text-[var(--gold)] duration-300">
+                       class="hover:text-[#C9A44C] duration-300">
+
                         <i class="fa-brands fa-whatsapp"></i>
+
                     </a>
 
                 </div>
@@ -586,7 +733,9 @@
         </div>
 
         <div class="border-t border-white/10 mt-16 pt-8 text-center text-white/60">
+
             © 2026 BIG BRINDES — Todos os direitos reservados.
+
         </div>
 
     </footer>
@@ -599,7 +748,7 @@
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-    <!-- Swiper -->
+    <!-- SWIPER -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
@@ -615,29 +764,38 @@
             duration: 1
         });
 
-        gsap.from(".hero-gradient h2", {
+        gsap.from(".hero-bg h2", {
             y: 50,
             opacity: 0,
             duration: 1.2
         });
 
         new Swiper(".mySwiper", {
+
             loop: true,
+
             autoplay: {
                 delay: 3000
             },
+
             spaceBetween: 30,
+
             breakpoints: {
+
                 0: {
                     slidesPerView: 1
                 },
+
                 768: {
                     slidesPerView: 2
                 },
+
                 1024: {
                     slidesPerView: 3
                 }
+
             }
+
         });
 
     </script>
